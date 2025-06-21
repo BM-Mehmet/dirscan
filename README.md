@@ -18,6 +18,9 @@ Bu program, bir hedef URL'deki `"MSEC"` kısmını verilen wordlist dosyasındak
 ## Kullanım
 
 ```bash
+# Build komutu
+go build -o dirscan dirscan.go
+
 # Dizin/endpoint taraması
 ./dirscan -u http://example.com/MSEC -w wordlist.txt -t 50 -mc 200
 
