@@ -11,12 +11,16 @@ Bu program, bir hedef URL'deki `"MSEC"` kısmını verilen wordlist dosyasındak
 - Eşzamanlı (concurrent) olarak belirtilen sayıda iş parçacığı (goroutine) ile tarama yapar.
 - HTTP durum kodlarına göre filtreleme yapabilir (örneğin sadece 200 dönenleri gösterme).
 - Parametreler sayesinde esnek kullanım imkanı sağlar.
+- Subdomain taraması için de kullanılabilir `"MSEC"` yerini değiştirmek yeterlidir.
 
 ---
 
 ## Kullanım
 
 ```bash
-./dirscan -u http://example.com/MSEC -w wordlist.txt -t 20 -mc 200
+# Dizin/endpoint taraması
+./dirscan -u http://example.com/MSEC -w wordlist.txt -t 50 -mc 200
 
+# Subdomain taraması
+./dirscan -u http://MSEC.example.com -w subdomains.txt -t 30
 
