@@ -1,4 +1,4 @@
-# own_fuff
+# dirscan
 
 Bu program, bir hedef URL'deki `"MSEC"` kısmını verilen wordlist dosyasındaki kelimelerle değiştirerek HTTP istekleri gönderen basit bir dizin tarayıcıdır (fuzzer).
 
