@@ -73,7 +73,7 @@ func main() {
 					continue
 				}
 				if matchStatus == 0 || resp.StatusCode == matchStatus {
-					fmt.Printf("[HATA] Status %d for %s\n", resp.StatusCode, msecURL)
+					fmt.Printf("Status %d for %s\n", resp.StatusCode, msecURL)
 					resp.Body.Close()
 				}
 			}
